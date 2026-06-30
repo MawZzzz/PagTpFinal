@@ -1,0 +1,289 @@
+@charset "UTF-8";
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color:#1A312C;
+    color:#FFF4E1;
+    line-height:1.6;
+}
+
+/* HEADER */
+.header-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding:20px;
+}
+
+#Titulo{
+    font-size:2.5rem;
+    padding:10px 50px;
+    border:1px solid #FFF4E1;
+    color:#FFF4E1;
+    background-image:linear-gradient(45deg,#428475,#1A312C);
+    clip-path:polygon(0% 100%,95% 100%,100% 0%,0% 0%);
+    display:inline-block;
+    margin-bottom:10px;
+}
+
+#SubTitulo{
+    font-style:italic;
+    font-size:1.5rem;
+    color:#FFF4E1;
+    background-image:linear-gradient(to right,#428475,#1A312C);
+    border:1px solid #3b3e3f;
+    padding:8px 25px;
+    display:inline-block;
+}
+
+/* MENÚ */
+.menu{
+    list-style:none;
+    display:flex;
+    gap:15px;
+}
+
+.menu li{
+    position:relative;
+}
+
+.menu a{
+    display:block;
+    padding:12px 20px;
+    text-decoration:none;
+    background-color:#428475;
+    color:white;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    background-color:#89D7B7;
+    color:#1A312C;
+}
+
+/* SUBMENU */
+.submenu{
+    display:none;
+    list-style:none;
+    position:absolute;
+    top:100%;
+    right:0;
+    background-color:#428475;
+    border-radius:8px;
+}
+
+.desplegable:hover .submenu{
+    display:block;
+}
+
+.submenu li{
+    width:180px;
+}
+
+/* TITULOS DE CADA PAGINA */
+.titulo-pagina{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #FFF4E1;
+    background-image: linear-gradient(to right, #428475, #1A312C);
+    padding: 10px 25px;
+    border: 1px solid #FFF4E1;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* CONTENEDOR DEL TITULO */
+.contenedor-titulo{
+    text-align: center;
+}
+
+
+/* INTRODUCCIÓN */
+.introduccion{
+    border-radius:25px;
+    color:#1A312C;
+    font-size:25px;
+    width:80%;
+    padding:20px 30px;
+    margin:50px auto;
+    background-color:rgba(137,215,183,0.9);
+}
+
+#p{
+    color:#1A312C;
+    font-style:italic;
+    text-decoration:underline;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+/* IMÁGENES PRINCIPALES */
+.slide-img{
+    width:400px;
+    margin:50px auto;
+    text-align:center;
+}
+
+.slide img{
+    width:100%;
+    height:auto;
+    border-radius:15px;
+    object-fit:cover;
+}
+
+#narutoBusto{
+    color:#FFF4E1;
+    font-size:30px;
+    margin-top:15px;
+}
+
+/* CATÁLOGO */
+.contenedor{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    margin:50px;
+}
+
+.producto{
+    background-color:#428475;
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+    width:280px;
+    transition:0.3s;
+}
+
+.producto:hover{
+    transform:scale(1.05);
+}
+
+.producto img{
+    width:100%;
+    border-radius:15px;
+}
+
+.producto h2{
+    margin:15px 0;
+}
+
+.producto p{
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+.producto input{
+    width:60px;
+    padding:8px;
+    margin:10px 0;
+}
+
+/* BOTONES */
+button{
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background-color:#1A312C;
+    color:#FFF4E1;
+    transition:0.3s;
+}
+
+button:hover{
+    background-color:#89D7B7;
+    color:#1A312C;
+}
+
+/* CONTENIDO GENERAL */
+.contenido{
+    width:80%;
+    margin:40px auto;
+    background-color:rgba(137,215,183,0.15);
+    padding:30px;
+    border-radius:20px;
+}
+/* Imputs Generales*/
+input, textarea{
+    padding:10px;
+    border:none;
+    border-radius:8px;
+}
+
+
+/* TABLAS */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th, td{
+    border:1px solid #FFF4E1;
+    padding:15px;
+    text-align:center;
+}
+
+th{
+    background-color:#428475;
+}
+
+/* BOTÓN CARRITO */
+.boton-carrito{
+    text-align:center;
+    margin:30px;
+}
+
+/* LISTAS DE CONTACTO */
+.contenido ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.contenido ul li{
+    background-color: #428475;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/* FOOTER */
+.footer{
+    color:#89D7B7;
+    background-color:#428475;
+    text-align:center;
+    border-top:1px solid #FFF4E1;
+    font-size:17px;
+    padding:50px;
+    margin-top:50px;
+}
+
+.footer a{
+    color:#FFF4E1;
+    text-decoration:none;
+    margin:10px;
+    padding:10px 15px;
+    background-color:#1A312C;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.footer a:hover{
+    background-color:#89D7B7;
+    color:#1A312C;
+}

@@ -2,61 +2,78 @@
 
 <html lang="es">
 <head>
-    <title>Proyect 3D</title>
-        <link rel="stylesheet" type="text/css" href="cssPag1.css">
-            <style>
-            </style>
-            
-    <script type="text/javascript" src=  ></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 3D</title>
+    <link rel="stylesheet" href="estiloGeneral.css">
 </head>
+
 <body>
 
-    <h2 id="Titulo">Bienvenido a Proyecto 3D</h2>
-        
+<header class="header-container">
 
-<header>
-    
-    <h3 id="SubTitulo">Descripción del proyecto</h3>
-        <div><pre class="introduccion">
-    <p id="p">Hola somos Proyect 3D!</p>
-En este lugar vas a poder ver los diseños que te gusten e adquirirlos   
-    en esta seccion vas a poder ver differentes tipos de impresiones del catalogo
-                                                                     </pre>
-        </div>
+    <div>
+        <h1 id="Titulo">Bienvenido a Proyecto 3D</h1>
+        <h2 id="SubTitulo">Descripción del proyecto</h2>
+    </div>
+
+    <nav>
+        <ul class="menu">
+
+            <li><a href="PagNumero1.html">Inicio</a></li>
+
+            <li class="desplegable">
+                <a href="#">Catálogo</a>
+                <ul class="submenu">
+                    <li><a href="PagNumero2.html">Impresiones</a></li>
+                    <li><a href="PagNumero3.html">Envíos</a></li>
+                    <li><a href="PagNumero4.html">Formas de pago</a></li>
+                </ul>
+            </li>
+
+            
+            <li><a href="PagNumero5.html">Contacto</a></li>
+
+
+            <li><a href="PagNumero6.html">Quiénes somos</a></li>
+
+            <li><a href="PagNumero7.html">🛒 Carrito</a></li>
+
+        </ul>
+    </nav>
+
 </header>
-    <main>
-        
-    
-    <div class="slide-img"> 
-        
-        <div class="slide">                                                               
-            <img src="images/busto Naruto.jpg" alt="Busto Naruto" loading="lazy">
+
+<main>
+
+    <section class="introduccion">
+        <p id="p">¡Hola! Somos Proyecto 3D</p>
+
+        <p>
+            En este lugar vas a poder ver los diseños que más te gusten
+            y adquirirlos. También vas a encontrar diferentes tipos de
+            impresiones 3D para coleccionistas, decoración y pedidos personalizados.
+        </p>
+    </section>
+
+    <section class="slide-img">
+
+        <div class="slide">
+            <img src="images/busto Naruto.jpg" alt="Busto Naruto">
             <p id="narutoBusto">Busto de Naruto</p>
         </div>
-        
-    </div>                                              
-        
 
-        
-    </main>    
+    </section>
 
-    <footer class="footer">
-        <a id="contacto" href="PagNumero6">Contacto</a>
-        <a id="quienesSomos" href="PagNumero5">Quienes somos</a>
-        <a id="formasDePago" href="PagNumero5">Formas De Pago</a>
-    </footer>
+</main>
 
+<footer class="footer">
+
+    <a href="PagNumero2.html">Ver Catálogo</a>
+    <a href="PagNumero7.html">Ir al Carrito</a>
+    <a href="PagNumero5.html">Contactanos</a>
+
+</footer>
 
 </body>
-
-
-
-
-
-
-
-
-
-
-
 </html>
