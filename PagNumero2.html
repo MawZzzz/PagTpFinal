@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    
+
 <html lang="es">
  <head>
     <meta charset="UTF-8">
@@ -46,12 +46,18 @@
 
     <!-- Producto 1 -->
     <div class="producto">
-        <img src="images/busto Naruto.jpg" alt="Naruto">
+        <img src="images/bustoNaruto.jpg" alt="Naruto">
         <h2>Busto Naruto</h2>
+        
+        <label>Stock:</label>
+        
+        <span data-stock-producto="Busto Naruto"></span>
+        
         <p>$12000</p>
-
+        
         <label>Cantidad:</label>
-        <input type="number" id="cantidadNaruto" min="1" value="1">
+        <input type="number" id="cantidadNaruto" min="1" max="5" value="1">
+
 
         <button onclick="agregarCarrito('Busto Naruto',12000,'cantidadNaruto')">
             Agregar al carrito
@@ -60,12 +66,16 @@
 
     <!-- Producto 2 -->
     <div class="producto">
-        <img src="images/goku.jpg" alt="Goku">
+        <img src="images/FiguraGoku.jpg" alt="Goku">
         <h2>Figura Goku</h2>
+        <label>Stock:</label>
+
+        <span data-stock-producto="Figura Goku"></span>
         <p>$15000</p>
+        
 
         <label>Cantidad:</label>
-        <input type="number" id="cantidadGoku" min="1" value="1">
+        <input type="number" id="cantidadGoku" min="1" max="10" value="1">
 
         <button onclick="agregarCarrito('Figura Goku',15000,'cantidadGoku')">
             Agregar al carrito
@@ -79,8 +89,8 @@
         <button>Ver carrito</button>
     </a>
 </div>
-
-<script src="carrito.js"></script>
+<script src="stock.js"></script>
+    <script src="carrito.js"></script>
 
 <footer class="footer">
 
