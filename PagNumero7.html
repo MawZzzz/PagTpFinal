@@ -3,6 +3,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
     <link rel="stylesheet" href="estiloGeneral.css">
 </head>
@@ -40,7 +41,7 @@
 
         </header>
 
-            <main class="contenido">
+            <main class="contenido-carrito">
 
                 <button onclick="location.href='PagNumero2.html'">Volver al catálogo</button>
 
@@ -68,9 +69,28 @@
                                 <button onclick="vaciarCarrito()">Vaciar carrito</button>
                 
             </main>
+            <div id="notificacion" class="notificacion">
+
+    <span id="iconoNotificacion" class="icono"></span>
+
+    <div>
+        <h3 id="tituloNotificacion"></h3>
+        <p id="textoNotificacion"></p>
+    </div>
+
+</div> 
                 <script src="stock.js"></script>
                     <script src="carrito.js"></script>
                     
+
+     
+                    <footer class="footer">
+
+    <a href="PagNumero2.html">Ver Catálogo</a>
+    <a href="PagNumero7.html">Ir al Carrito</a>
+    <a href="PagNumero5.html">Contactanos</a>
+
+</footer>
 
     </body>
     

@@ -3,6 +3,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="estiloGeneral.css">
 </head>
@@ -12,7 +13,7 @@
 
     <div class="header-texto">
         <h1 id="Titulo">Bienvenido a Proyecto 3D</h1>
-        <h2 id="SubTitulo">Descripción del proyecto</h2>
+        <h2 id="SubTitulo">Contacto</h2>
     </div>
 
     <nav>
@@ -40,7 +41,7 @@
 
 </header>
 
-<main class="contenido">
+<main class="contenido-contacto">
 
     <div class="contenedor-titulo">
         <h2 class="titulo-pagina">Contacto</h2>
@@ -55,6 +56,55 @@
     </ul>
 
 </main>
+
+    <div class="form-container">
+
+    <h2>Contactanos</h2>
+    <p>Completá el formulario y responderemos a la brevedad.</p>
+
+    <form id="formContacto">
+
+        <div class="campo">
+            <label for="nombre">👤 Nombre completo</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+        </div>
+
+        <div class="campo">
+            <label for="email">📧 Correo electrónico</label>
+            <input type="email" id="email" placeholder="ejemplo@gmail.com">
+        </div>
+
+        <div class="campo">
+            <label for="telefono">📱 Teléfono</label>
+            <input type="tel" id="telefono" placeholder="+54 9 11 1234-5678">
+        </div>
+
+        <div class="campo">
+            <label for="mensaje">💬 Comentanos tu consulta</label>
+            <textarea id="mensaje" rows="6" placeholder="Escribí tu mensaje..."></textarea>
+        </div>
+
+        <button type="submit">
+            Enviar mensaje
+        </button>
+
+    </form>
+
+</div>
+
+<div id="notificacion" class="notificacion">
+
+    <span id="iconoNotificacion" class="icono"></span>
+
+    <div>
+        <h3 id="tituloNotificacion"></h3>
+        <p id="textoNotificacion"></p>
+    </div>
+
+</div>
+
+<script src="contacto.js"></script>
+    
 <footer class="footer">
 
     <a href="PagNumero2.html">Ver Catálogo</a>
@@ -62,6 +112,7 @@
     <a href="PagNumero5.html">Contactanos</a>
 
 </footer>
+
 
 
 </body>
