@@ -1,13 +1,13 @@
 /* 
-    Manejo de stock sin PHP: se guarda en localStorage.
-    Para cambiar el stock inicial de un producto, editá los valores acá abajo.
-    IMPORTANTE: el nombre tiene que ser EXACTAMENTE igual al que usás en 
-    agregarCarrito('Nombre', precio, idCantidad) en el HTML.
+    Para cambiar el stock inicial de un producto, editá los valores acá abajo
+    IMPORTANTE: el nombre tiene que ser EXACTAMENTE igual al que uso en 
+    agregarCarrito('Nombre', precio, idCantidad) en el HTML
 */
 
 const productosStock = {
     "Busto Naruto": 5,
-    "Figura Goku": 10
+    "Figura Goku": 10,
+    "Naruto Chibi": 2
 };
 
 // Inicializar el stock en localStorage la primera vez (si ya existe, no lo pisa)
@@ -37,7 +37,7 @@ function aumentarStock(nombre, cantidad) {
 }
 
 // Busca todos los elementos con data-stock-producto="Nombre del producto"
-// y les pone el stock actual como texto. Ver ejemplo de uso en el HTML.
+// y les pone el stock actual como texto
 function mostrarStock() {
     document.querySelectorAll("[data-stock-producto]").forEach(el => {
         let nombre = el.getAttribute("data-stock-producto");

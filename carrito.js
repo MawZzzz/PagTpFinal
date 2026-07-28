@@ -65,7 +65,8 @@ let total = 0;
 
 const imagenesProductos = {
     'Busto Naruto': "images/BustoNaruto.jpg",
-    'Figura Goku': "images/FiguraGoku.jpg"
+    'Figura Goku': "images/FiguraGoku.jpg",
+    'Naruto Chibi':"images/naruto chibi.jpg"
 };
 
 carrito.forEach((producto, index ) => {
